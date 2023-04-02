@@ -6,7 +6,6 @@ public class ProductProfiles : Profile
 {
     public ProductProfiles()
     {
-        CreateMap<Entities.Product, Models.CategoryDto>();
-        CreateMap<Entities.Product, Models.ImageDto>();
+        CreateMap<Entities.Product, Models.ProductDto>();
     }
 }

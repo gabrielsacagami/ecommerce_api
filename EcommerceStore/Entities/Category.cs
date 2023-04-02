@@ -21,5 +21,4 @@ public class Category
     {
         Name = name;
     }
-    
 }

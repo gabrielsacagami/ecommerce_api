@@ -30,7 +30,7 @@ public class ProductsController : ControllerBase
         {
             return NotFound();
         }
-        return Ok(productEntities);
+        return Ok(_mapper.Map<IEnumerable<ProductDto>>(productEntities));
     }
     
     [HttpGet("{productId}")]
